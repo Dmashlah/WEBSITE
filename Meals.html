@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الوجبات</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">الصفحة الرئيسية</a></li>
+            <li><a href="AboutUs.html">من نحن</a></li>
+            <li><a href="Meals.html">قائمة الوجبات</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>قائمة الوجبات المتوفرة</h1>
+
+        <table border="1" id="mealsTable">
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>صورة الوجبة</th>
+                    <th>الوجبة</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الوجبة 1 -->
+                <tr>
+                    <td>SF-001</td>
+                    <td><img src="images/fish.jpg" alt="سمك بوري" width="80" height="60"></td>
+                    <td>وجبة سمك بوري مشوي لشخصين</td>
+                    <td>110000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-1"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="110000"></td>
+                </tr>
+                <tr id="details-1" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> المصري | <strong>تصنيف الطعام:</strong> مأكولات بحرية</p>
+                            <p><strong>المكونات:</strong> 4 سمكات بوري أحمر، أوريجانو، زيت زيتون، ثوم، فلفل أحمر، إكليل الجبل، ليمون.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- الوجبة 2 -->
+                <tr>
+                    <td>SF-002</td>
+                    <td><img src="images/alfredo.jpg" alt="تشيكن ألفريدو" width="80" height="60"></td>
+                    <td>وجبة تشيكن ألفريدو</td>
+                    <td>75000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-2"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="75000"></td>
+                </tr>
+                <tr id="details-2" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> الإيطالي | <strong>تصنيف الطعام:</strong> معكرونة ودجاج</p>
+                            <p><strong>المكونات:</strong> معكرونة فيتوتشيني، قطع دجاج مشوية، كريمة طازجة، جبنة بارميزان، زبدة، فطر.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- الوجبة 3 -->
+                <tr>
+                    <td>SF-003</td>
+                    <td><img src="images/skewers.jpg" alt="أسياخ لحم مشوي" width="80" height="60"></td>
+                    <td>وجبة أسياخ لحم مشوي</td>
+                    <td>90000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-3"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="90000"></td>
+                </tr>
+                <tr id="details-3" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> الشرقي | <strong>تصنيف الطعام:</strong> مشويات</p>
+                            <p><strong>المكونات:</strong> قطع لحم غنم طازجة، بصل، طماطم مشوية، بقدونس، وتوابل شرقية.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- الوجبة 4 -->
+                <tr>
+                    <td>SF-004</td>
+                    <td><img src="images/stew.png" alt="يخنة لحم مع الرز" width="80" height="60"></td>
+                    <td>يخنة لحم مع الرز</td>
+                    <td>65000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-4"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="65000"></td>
+                </tr>
+                <tr id="details-4" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> العربي | <strong>تصنيف الطعام:</strong> طبخ منزلي</p>
+                            <p><strong>المكونات:</strong> لحم عجل مطبوخ بصلصة الطماطم، بطاطا، جزر، يقدم مع أرز بالشعيرية.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- الوجبة 5 -->
+                <tr>
+                    <td>SF-005</td>
+                    <td><img src="images/salad.jpg" alt="سلطة موسمية" width="80" height="60"></td>
+                    <td>سلطة خضار موسمية</td>
+                    <td>25000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-5"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="25000"></td>
+                </tr>
+                <tr id="details-5" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> شامي | <strong>تصنيف الطعام:</strong> مقبلات</p>
+                            <p><strong>المكونات:</strong> خيار، طماطم، خس، نعناع، زيت زيتون، عصير ليمون.</p>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- الوجبة 6 -->
+                <tr>
+                    <td>SF-006</td>
+                    <td><img src="images/shawarma.jpg" alt="شاورما عربي" width="80" height="60"></td>
+                    <td>وجبة شاورما دجاج عربي</td>
+                    <td>50000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-cb" data-target="details-6"></td>
+                    <td><input type="checkbox" class="select-meal-cb" value="50000"></td>
+                </tr>
+                <tr id="details-6" class="meal-details" style="display:none;">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <p><strong>المطبخ:</strong> سوري | <strong>تصنيف الطعام:</strong> وجبات سريعة</p>
+                            <p><strong>المكونات:</strong> شاورما دجاج بخبز الصاج، كريم ثوم، بطاطا مقلية، مخلل.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="continueBtn">متابعة</button>
+
+        <!-- نموذج الطلب -->
+        <section id="orderFormSection" style="display:none;">
+            <h2>تأكيد الطلب</h2>
+            <form id="orderForm">
+                <label for="fullName">الاسم الكامل (إنكليزي فقط):</label>
+                <input type="text" id="fullName" name="fullName"><br><br>
+
+                <label for="bankAccount">رقم الحساب المصرفي (إجباري - 6 أرقام):</label>
+                <input type="text" id="bankAccount" name="bankAccount" required><br><br>
+
+                <label for="orderDate">تاريخ الطلب (dd-mm-yyyy):</label>
+                <input type="text" id="orderDate" name="orderDate"><br><br>
+
+                <label for="mobileNumber">رقم الموبايل (Syriatel / MTN):</label>
+                <input type="text" id="mobileNumber" name="mobileNumber"><br><br>
+
+                <button type="submit" id="submitOrderBtn">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
